@@ -8,13 +8,8 @@ namespace ConsoleApplication19
 {
     class ChessBoard:Board
     {
-        
-        public ChessBoard(int height, int width):base(height,width)
-        {
-            
-            
 
-        }
+      
         public void Inputname(Player p1, Player p2)
         {
             Console.Write("Player 1 Name:");
@@ -52,7 +47,7 @@ namespace ConsoleApplication19
         }
 
 
-        public void StopChess(Player p1, Player p2)
+        public void StopChess(Player p1, Player p2) // parameter for avoiding misconception in overloading
         {
             string t = DateTime.Now.ToShortTimeString();
             string time = t.Substring(2, 3);
@@ -68,5 +63,7 @@ namespace ConsoleApplication19
 
 
         }
+
+       
     }
 }

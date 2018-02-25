@@ -11,17 +11,20 @@ namespace ConsoleApplication19
         protected internal int width { get; set; }
         protected internal int height { get; set; }
 
-        protected internal Board(int height, int width)
+        public Board() //base class constructor
         {
-
+            Console.WriteLine("----Chess Board----");
+            Console.WriteLine("Enter Two Input as the Size of the board as Width and Height Respectively\n");
+            Console.Write("Height:");
+            height = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+            Console.Write("Width:");
+            width = int.Parse(Console.ReadLine());
 
          
 
         }
-        public Board()
-        {
-
-        }
+        
 
 
 

@@ -11,7 +11,7 @@ namespace ConsoleApplication19
         static void Main(string[] args)
         {
             
-            SpecialChessBoard scb = new SpecialChessBoard(3,4);
+            SpecialChessBoard scb = new SpecialChessBoard();
             
             scb.ShowBoard();
             Console.WriteLine("How Many Players You want to play");
@@ -22,9 +22,9 @@ namespace ConsoleApplication19
                 {
                     Player p1 = new Player();
                     Player p2 = new Player();
-                    scb.Inputname(p1, p2);
-                    scb.StartChess(p1, p2);
-                    scb.StopChess(p1, p2);
+                    scb.Inputname(p1, p2);//  overloading
+                    scb.StartChess(p1, p2); // inherited overloading
+                    scb.StopChess(p1, p2); // inherited overloading
                     
                 }
                 else 
@@ -32,10 +32,10 @@ namespace ConsoleApplication19
                     Player p1 = new Player();
                     Player p2 = new Player();
                     Player p3 = new Player();
-                    scb.Inputname(p1, p2,p3);
-                
-                    scb.StartChess(p1, p2,p3);
-                    scb.StopChess(p1, p2, p3);
+                    scb.Inputname(p1, p2, p3);//  overloading
+
+                    scb.StartChess(p1, p2, p3);// inherited overloading
+                    scb.StopChess(p1, p2, p3);// inherited overloading
                 }
                 
             }
